@@ -89,9 +89,65 @@
         <h3> Gameplay </h3>
 
         <h4> Objectives </h4>
+        <p> 
+          I've reworked the objective system - which doesn't change any look from the
+          outside, but it makes it a lot more feasible for me to develop future objectives.
+          <figure class="figure">
+            <img src="assets/objectives.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">
+               Elite Objective
+            </figcaption>
+        </figure>
+
+        </p>
 
         <h4> Abilities </h4>
 
+        <figure class="figure flex-fill m-0">
+          <img src="assets/unlockables.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+          <figcaption class="figure-caption text-center">
+              Unlockable Weapons
+          </figcaption> </figure>
+        <figure class="figure flex-fill m-0">
+
+        <p> 
+          For abilities, I'm transitioning from a class-based approach to a more generic approach
+          like done in Vampire Survivors. 
+
+          My thought process for this is that it will allow for more variety in each playthrough,
+          the players will not be limited to using X abilities with Y class, but instead
+          have the option to mix and match different abilities as they see fit.
+
+          That being said, there will still be some ability differences, which leads into my next
+          headline of...
+        </p>
+
+        <h4> Classes </h4>
+
+        <p>
+          Currently, there are four classes, of which each will have distinct features.
+
+          My philosophy behind the classes is the following:
+          <ol>
+            <li> Each class should play around some unique feature or be otherwise distinct </li>
+            <li> Each class should have a unique way of survival -> in this case regaining health </li>
+            <li> Each class should have access to unique meta-progression upgrades </li>
+            <li> Each class should be able to access some kind of survival ability </li>
+          </ol>
+
+          That being said, for this version nothing really changes about the classes.
+          Builder and Mage currently have no survival mechanisms.
+
+          <figure class="figure flex-fill m-0">
+            <img src="assets/builder.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">
+                Builder - Timed turrets
+            </figcaption> </figure>
+          <figure class="figure flex-fill m-0">
+
+          The builder's turrets however are now functioning on a timer, so you cannot simply
+          camp in a corner without having to replace turrets.
+        </p>
 
         <h3> Level Design </h3>
         <h4> Maps </h4>
@@ -104,26 +160,61 @@
         <p>
             I haven't finished the level design yet, and it's something that I struggle with,
             but here is some visuals to look at for them:
-            <figure class="figure">
+            <div class="d-flex gap-3">
+              <figure class="figure flex-fill m-0">
                 <img src="assets/dungeon.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
                 <figcaption class="figure-caption text-center">
                     Dungeon
-                </figcaption>
-            </figure>
-            <figure class="figure">
+                </figcaption> </figure>
+              <figure class="figure flex-fill m-0">
                 <img src="assets/grasslands.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
                 <figcaption class="figure-caption text-center">
                    Grasslands
-                </figcaption>
-            </figure>
+                </figcaption> </figure>
+            </div>
         </p>
-        <h4> Events </h4>
+
+        <p>
+          Long-term, the plan for the levels is to have one unique endless level and one unique 
+          campaign level for each environment type. 
+          The idea for the levels is that the campaign level will have structured objectives to complete - 
+          still maintaining the simplicity of a survivor game but objectives such as:
+          <ul>
+            <li> Move to a specific location </li>
+            <li> Stay in a specific zone for a while </li>
+            <li> Survive for X seconds </li>
+            <li> Kill X elite enemies </li>
+            <li> Kill the boss </li>
+          </ul>
+        </p>
+        <h4> 
+          Events
+          <img src="assets/event-title.gif" class="figure-img img-fluid rounded" style="text-align: center" alt="Descriptive Alt Text">
+        </h4>
         <p> To start with events, I've added a new system where over time
             different types of events will occur during the player's survival
             experience.
 
+            <div class="d-flex gap-3">
+              <figure class="figure flex-fill m-0">
+                <img src="assets/wave-event.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+                <figcaption class="figure-caption text-center">
+                    Wave Event - where bats spawn on a path
+                </figcaption> </figure>
+              <figure class="figure flex-fill m-0">
+                <img src="assets/swarm-event.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+                <figcaption class="figure-caption text-center">
+                   Grasslands
+                </figcaption> </figure>
+            </div>
+
             These events will eventually be more diverse, but currently we have
             three unique events.
+            <ol>
+              <li> Swarm: Enemies rapidly spawn near the player using the current enemy pool</li>
+              <li> Wave: Flying enemies spawn on a directed path, travelling through the player's given position </li>
+              <li> Circle: A cirlce of enemies spawn around the player with high HP, trapping them </li>
+            </ol>
         </p>
         
         <h3> User Interface </h3>
@@ -140,6 +231,26 @@
         the selections for level and character to allow for 
         more space to present each idea separately.
          </p>
+
+         <p>
+
+          Moving on to the unlockables screens, I've added 
+          some changes to both the weapons and the enemies,
+          they currently look like below (still WIP):
+         </p>
+
+         <div class="d-flex gap-3">
+          <figure class="figure flex-fill m-0">
+            <img src="assets/enemies.png" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">
+                Enemies screen
+            </figcaption> </figure>
+          <figure class="figure flex-fill m-0">
+            <img src="assets/weapons.png" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">
+               Weapons screen
+            </figcaption> </figure>
+        </div>
 
     </article>
   </main>
