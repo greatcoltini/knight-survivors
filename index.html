@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog Post Title</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font: Press Start 2P -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+      /* Optionally, you can set the whole page to use this font, or just parts of it */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* Post Header with background image */
+    .post-header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('header-image.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    /* Use the gaming font for the post title */
+    .post-header h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .post-header p.lead {
+      font-size: 1.25rem;
+    }
+    .post-content {
+      padding: 2rem 0;
+    }
+
+    h3 {
+        font-family: 'Press Start 2P';
+    }
+    /* Optional: If you want other parts to use the gaming font, add a utility class */
+    .gaming-font {
+      font-family: 'Press Start 2P', cursive;
+    }
+  </style>
+</head>
+<body>
+  <!-- Blog Post Header -->
+  <header class="post-header">
+    <div class="container">
+      <h1 class="display-3">LONE SURVIVOR
+      </h1>
+      <p class="lead">Version 0.0.4 Release Notes</p>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="container post-content">
+    <p class="text-muted">Posted on February 11, 2025 by <strong>Colton Donkersgoed</strong></p>
+    <article>
+        <h1 style="text-align:center"> Intro </h1>
+
+        <p> It's been a long time since I've made a post, and 
+            I felt like the best way to convey the changes would be to use some format
+            that allows me to incorporate both words and images.
+            <br><br>
+            This may not be a permanent format, but I would like to try to 
+            document my changes in a more interesting way, and a blog post seemed like 
+            it might be a decent method.
+        
+        </p>
+        
+        <figure class="figure">
+            <img src="assets/changes-0.0.4.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">
+                I try to do 1 'commit' or part of work on the game daily
+            </figcaption>
+        </figure>
+        <p>
+             I've been working away steadily on Lone Survivor, and I'm hoping to have some kind of release in this year.
+        </p>
+
+        <h1 style="text-align: center"> Main </h1>
+        <p> </p>
+        <h3> Gameplay </h3>
+
+        <h4> Objectives </h4>
+
+        <h4> Abilities </h4>
+
+
+        <h3> Level Design </h3>
+        <h4> Maps </h4>
+        <p>
+            For maps, I've purchased three asset packs for three separate environments.
+            I was hesitant to do this at first, but I felt that these assets 
+            aligned well with my vision of what I wanted to do for the levels.
+        </p>
+
+        <p>
+            I haven't finished the level design yet, and it's something that I struggle with,
+            but here is some visuals to look at for them:
+            <figure class="figure">
+                <img src="assets/dungeon.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+                <figcaption class="figure-caption text-center">
+                    Dungeon
+                </figcaption>
+            </figure>
+            <figure class="figure">
+                <img src="assets/grasslands.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+                <figcaption class="figure-caption text-center">
+                   Grasslands
+                </figcaption>
+            </figure>
+        </p>
+        <h4> Events </h4>
+        <p> To start with events, I've added a new system where over time
+            different types of events will occur during the player's survival
+            experience.
+
+            These events will eventually be more diverse, but currently we have
+            three unique events.
+        </p>
+        
+        <h3> User Interface </h3>
+
+        <h4> Character and Level Selection </h4>
+        <figure class="figure">
+            <img src="assets/selection-screen.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">
+                Animation and Live footage of the class + level selection
+            </figcaption>
+        </figure>
+        <p> I've made another design change to the character 
+            and level selection screens. I've opted to separate
+        the selections for level and character to allow for 
+        more space to present each idea separately.
+         </p>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2025 GreatColtini. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
