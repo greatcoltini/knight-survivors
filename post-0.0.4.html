@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lone Wanderer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font: Press Start 2P -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .post-header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('assets/menu-screen.gif') center/cover ;
+      background-repeat: no-repeat;
+      padding-top: 55vh;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .post-header h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 3rem;
+      margin-bottom: 0; 
+    }
+
+    h3 {
+      font-family: 'Press Start 2P';
+    }
+
+    h4 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1.25rem;
+    }
+    .post-header p.lead {
+      font-size: 1.25rem;
+    }
+    .post-content {
+      padding: 2rem 0;
+    }
+    .gaming-font {
+      font-family: 'Press Start 2P', cursive;
+    }
+    .content-section {
+      background-color: rgba(148, 148, 148, 0.947);
+      color: #fff;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+    }
+    .figure img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Blog Post Header -->
+  <header class="post-header" style="margin-bottom: 0;">
+    <div class="container-fluid" style="background-color: black; padding: 0.2rem;margin-bottom: 0;">
+      <h1 class="display-3" style="margin-bottom: 0;">LONE WANDERER</h1>
+      <p class="lead" style="margin-bottom: 0;">Version 0.0.4 Release Notes</p>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="container post-content">
+    <p class="text-muted">Posted on February 12, 2025 by <strong>Colton Donkersgoed</strong></p>
+    <article>
+      <section class="content-section">
+        <h1 class="text-center"> <a class="text-center" style='text-align: center' href="https://github.com/greatcoltini/knight-survivors/releases/tag/v0.0.4" target="_blank">Version 0.0.4 Download</a> </h1>
+      </section>
+
+
+      <section class="content-section">
+        <h1 class="text-center">Intro</h1>
+        <p>It's been a long time since I've made a post, and I felt like the best way to convey the changes would be to use some format that allows me to incorporate both words and images.</p>
+        <p>This may not be a permanent format, but I would like to try to document my changes in a more interesting way, and a blog post seemed like it might be a decent method.</p>
+        <figure class="figure">
+          <img src="assets/changes-0.0.4.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+          <figcaption class="figure-caption text-center">I try to do 1 'commit' or part of work on the game daily</figcaption>
+        </figure>
+        <p>
+          I'm going to try and capture most of the main changes/features, but there will likely
+          be a lot of things left out / that I will bring up in the future - so stay tuned!
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h3 class="text-center">Gameplay</h3>
+        <h4>Objectives</h4>
+        <p>I've reworked the objective system - which doesn't change any look from the outside, but it makes it a lot more feasible for me to develop future objectives.</p>
+        <figure class="figure">
+          <img src="assets/objectives.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+          <figcaption class="figure-caption text-center">Elite Objective</figcaption>
+        </figure>
+
+        <h4>Abilities</h4>
+        <figure class="figure">
+          <img src="assets/unlockables.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+          <figcaption class="figure-caption text-center">Unlockable Weapons</figcaption>
+        </figure>
+        <p>For abilities, I'm transitioning from a class-based approach to a more generic approach like done in Vampire Survivors.</p>
+        <p>My thought process for this is that it will allow for more variety in each playthrough, the players will not be limited to using X abilities with Y class, but instead have the option to mix and match different abilities as they see fit.</p>
+        <p>That being said, there will still be some ability differences, which leads into my next headline of...</p>
+
+        <h4>Classes</h4>
+        <p>Currently, there are four classes, of which each will have distinct features.</p>
+        <ol>
+          <li>Each class should play around some unique feature or be otherwise distinct</li>
+          <li>Each class should have a unique way of survival -> in this case regaining health</li>
+          <li>Each class should have access to unique meta-progression upgrades</li>
+          <li>Each class should be able to access some kind of survival ability</li>
+        </ol>
+        <p>That being said, for this version nothing really changes about the classes. Builder and Mage currently have no survival mechanisms.</p>
+        <figure class="figure text-center">
+          <img src="assets/builder.gif" style="text-align:center" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+          <figcaption class="figure-caption text-center">Builder - Timed turrets</figcaption>
+        </figure>
+        <p>The builder's turrets however are now functioning on a timer, so you cannot simply camp in a corner without having to replace turrets.</p>
+      </section>
+
+      <section class="content-section">
+        <h3 class="text-center">Level Design</h3>
+        <h4>Maps</h4>
+        <p>For maps, I've purchased three asset packs for three separate environments. I was hesitant to do this at first, but I felt that these assets aligned well with my vision of what I wanted to do for the levels.</p>
+        <p>I haven't finished the level design yet, and it's something that I struggle with, but here is some visuals to look at for them:</p>
+        <div class="d-flex gap-3">
+          <figure class="figure flex-fill m-0">
+            <img src="assets/dungeon.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">Dungeon</figcaption>
+          </figure>
+          <figure class="figure flex-fill m-0">
+            <img src="assets/grasslands.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">Grasslands</figcaption>
+          </figure>
+        </div>
+        <p>Long-term, the plan for the levels is to have one unique endless level and one unique campaign level for each environment type. The idea for the levels is that the campaign level will have structured objectives to complete - still maintaining the simplicity of a survivor game but objectives such as:</p>
+        <ul>
+          <li>Move to a specific location</li>
+          <li>Stay in a specific zone for a while</li>
+          <li>Survive for X seconds</li>
+          <li>Kill X elite enemies</li>
+          <li>Kill the boss</li>
+        </ul>
+
+        <h4> Tutorial </h4>
+        <p> In addition, we now have a quick tutorial to explain 
+          active abilities, movement, and picking up items. </p>
+          <figure class="figure flex-fill m-0">
+            <img src="assets/tutorial.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">Tutorial</figcaption>
+          </figure>
+        <p>
+          The tutorial also features a secret!
+        </p>
+      </section>
+
+      <section class="content-section">
+        <div class="text-center">
+          <figure class="figure">
+            <img src="assets/event-title.gif" class="figure-img img-fluid rounded" style="text-align: center" alt="Descriptive Alt Text">
+          </figure>
+        </div>
+        <p>Moving on to events, I've added a new system where over time different types of events will occur during the player's survival experience.</p>
+        <div class="d-flex gap-3">
+          <figure class="figure flex-fill m-0">
+            <img src="assets/wave-event.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">Wave Event - where bats spawn on a path</figcaption>
+          </figure>
+          <figure class="figure flex-fill m-0">
+            <img src="assets/swarm-event.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">Grasslands</figcaption>
+          </figure>
+        </div>
+        <p>These events will eventually be more diverse, but currently we have three unique events:</p>
+        <ol>
+          <li>Swarm: Enemies rapidly spawn near the player using the current enemy pool</li>
+          <li>Wave: Flying enemies spawn on a directed path, travelling through the player's given position</li>
+          <li>Circle: A circle of enemies spawn around the player with high HP, trapping them</li>
+        </ol>
+      </section>
+
+      <section class="content-section">
+        <h3 class="text-center">User Interface</h3>
+        <h4>Character and Level Selection</h4>
+        <figure class="figure">
+          <img src="assets/selection-screen.gif" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+          <figcaption class="figure-caption text-center">Animation and Live footage of the class + level selection</figcaption>
+        </figure>
+        <p>I've made another design change to the character and level selection screens. I've opted to separate the selections for level and character to allow for more space to present each idea separately.</p>
+        <h4> Unlockables and Collectibles </h4>
+        <p>Moving on to the unlockables screens, I've added some changes to both the weapons and the enemies, they currently look like below (still WIP):</p>
+        <div class="d-flex gap-3">
+          <figure class="figure flex-fill m-0">
+            <img src="assets/enemies.png" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">Enemies screen</figcaption>
+          </figure>
+          <figure class="figure flex-fill m-0">
+            <img src="assets/weapons.png" class="figure-img img-fluid rounded" alt="Descriptive Alt Text">
+            <figcaption class="figure-caption text-center">Weapons screen</figcaption>
+          </figure>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2025 GreatColtini. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
