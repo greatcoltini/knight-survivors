@@ -58,6 +58,15 @@
       max-width: 100%;
       height: auto;
     }
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(248, 249, 250, 0);
+      padding: 1rem;
+      backdrop-filter: blur(5px);
+      margin: 0 -1rem;
+    }
   </style>
 </head>
 <body>
@@ -69,8 +78,11 @@
   </header>
 
   <main class="container post-content">
+    <nav class="sticky-nav">
+      <a href="index.html" class="btn btn-light">&larr; Back to Blog</a>
+    </nav>
     <p class="text-muted">Posted on January 15, 2025 by <strong>Colton Donkersgoed</strong></p>
-    <article>
+    <article> 
 
       <section class="content-section">
         <h3 class="text-center">Steamworks Developer</h3>
