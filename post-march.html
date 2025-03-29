@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lone Survivors - March Blog Post</title>
+  <!-- Same CSS as post-0.0.4.html -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .post-header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('assets/menu-screen.gif') center/cover ;
+      background-repeat: no-repeat;
+      padding-top: 55vh;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .post-header h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 3rem;
+      margin-bottom: 0; 
+    }
+
+    h3 {
+      font-family: 'Press Start 2P';
+    }
+
+    h4 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1.25rem;
+    }
+    .post-header p.lead {
+      font-size: 1.25rem;
+    }
+    .post-content {
+      padding: 2rem 0;
+    }
+    .gaming-font {
+      font-family: 'Press Start 2P', cursive;
+    }
+    .content-section {
+      background-color: rgba(148, 148, 148, 0.947);
+      color: #fff;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+    }
+    .figure img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="post-header">
+    <div class="container-fluid" style="background-color: black; padding: 0.2rem;margin-bottom: 0;">
+      <h1 class="display-3">LONE SURVIVORS</h1>
+      <p class="lead">MARCH BLOG POST</p>
+    </div>
+  </header>
+
+  <main class="container post-content">
+    <p class="text-muted">Posted on January 15, 2025 by <strong>Colton Donkersgoed</strong></p>
+    <article>
+
+      <section class="content-section">
+        <h3 class="text-center">Steamworks Developer</h3>
+        <p>As an update on the business side of things, I have taken some steps towards 
+            making my game come a little closer to reality.
+
+            This has been done with two things:
+            <ol>
+                <li>
+                    I am officially a Steamworks developer:
+                    <img src="assets/steamworks-dev.png" class="figure-img img-fluid rounded" alt="Steamworks Developer">
+                </li>
+                <li>
+                    I am also officially an owner of my own business:
+                        <strong> GreatColtini Industries </strong>
+                    <img src="assets/ontario-business-owner.png" class="figure-img img-fluid rounded" alt="Steamworks Developer">
+                </li>
+            </ol>
+
+            There were a lot more steps than I had anticipated, and a lot more random hurdles to overcome.
+            Mostly, it came down to a bunch of small things such as needing a business credit card if I wanted to release the game under a business,
+            or filling out forms for selling a game in the US from Canada.
+            But I'm glad that I got it done, and it's one more step to my intention of releasing this year!
+          </p>
+      </section>
+
+      <section class="content-section">
+        <h3 class="text-center">Steam Page</h3>
+        <p>In addition, I have begun working on my Steam page for my game. It's mostly just placeholder for now, but here is a sneak peek at what it looks like:</p>
+        <div class="text-center mb-4">
+            <img src="assets/steam-page.png" class="figure-img img-fluid rounded" alt="Steamworks Developer">
+        </div>
+
+        <p>I also requested commissioned art for the Steam page, as there are a lot of specific requirements, and I wanted someone with experience creating Steam page assets to handle it.</p>
+        <p>You can see on the right-hand side one of the capsules created. All of the logos and assets for the game were handmade:</p>
+        <div class="text-center mb-4"></div>
+            <img src="assets/library-hero.png" class="figure-img img-fluid rounded" alt="Steamworks Developer">
+        </div>
+
+        <p>I am very grateful for the work done and very pleased with the results! Below are some additional art pieces they created, along with the sketch I provided them:</p>
+        <div class="row text-center">
+            <div class="col-md-6 mb-4">
+          <img src="assets/library-capsule.png" class="figure-img img-fluid rounded" alt="Library Capsule">
+            </div>
+            <div class="col-md-6 mb-4">
+          <img src="assets/steam-page-2.png" class="figure-img img-fluid rounded" alt="Library Hero">
+            </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h3 class="text-center">UI Adjustments</h3>
+        <h4> Character Selection </h4>
+        <p> I have been making adjustments to the character selection screen,
+            and this is the newest layout:
+            <img src="assets/char_selection.png" class="figure-img img-fluid rounded" alt="Steamworks Developer">
+
+            <br>
+
+            I had two goals in mind when making these changes:
+            <ul>
+                <li>
+                    Have space for providing specific character class details
+                </li>
+                <li>
+                    Present many character options at once without it being too cluttered
+                </li>
+            </ul>
+          </p>
+
+          <h4>
+            In-game UI
+          </h4>
+          <p>
+            Next up for the UI is the in-game portion. Here, I have added in a passive ability tracker.
+            This tracker will show you what passive abilities you have unlocked and how many slots you have.
+          </p>
+          <img src="assets/passive-abilities.gif" class="figure-img img-fluid rounded" alt="Steamworks Developer">
+
+      </section>
+
+      <section class="content-section">
+        <h3 class="text-center"> Gameplay Changes </h3>
+
+        <h4> Weapon Format</h4>
+        <ul>
+            <li>Two regular upgrades, enhancing some basic stats of the weapons.</li>
+            <li>Two unique upgrades, adding special effects or changing the way the weapon works.</li>
+            <li>One legendary upgrade, requiring a specific number of upgrades to have been selected.</li>
+        </ul>
+
+        <h4> New Weapons </h4>
+        <p>
+            Dagger: a rapid fire weapon that automatically fires in the direction the player is facing.
+            <img src="assets/legendary-knives.gif" class="figure-img img-fluid rounded" alt="Steamworks Developer">
+            <ul>
+                <li> Dagger Pierce: each point in this upgrade allows the dagger to pierce one more target. </li>
+                <li> Dagger Damage: each point in this upgrade increases the damage of the dagger. </li>
+                <li> <span style="color: blue;">Poison Daggers</span>: each point in this upgrade increases the poison damage dealt by the dagger, dealing damage over time to a target.</li>
+                <li> <span style="color: blue;">Hidden Dagger</span>: This upgrade provides a 25% chance that a dagger will additionally fire from behind.</li>
+                <li> <span style="color: purple;">Fan of Knives</span>: The dagger upgrades to fire 5 projectiles at once.</li>
+            </ul>
+        </p>
+
+        <p>
+            Ice Spikes: a weapon that fires a cone of ice shards, freezing any enemies touched.
+            <img src="assets/ice-spikes.gif" class="figure-img img-fluid rounded" alt="Steamworks Developer">
+            <ul>
+                <li>Ice Spikes Damage: Increases the damage done by the ice spikes by 0.5 </li>
+                <li>Ice Spikes Duration: Increases the duration for which enemies are frozen.</li>
+                <li><span style="color: blue;">Coldsnap:</span> Upon thawing, enemies shoot out shards of ice dealing damage.</li>
+                <li><span style="color: blue;">Frostbite:</span> Enemies are slowed after unfreezing, increased by 10% per level.</li>
+                <li><span style="color: purple;">Ice Storm:</span> Creates a storm of ice around the player, freezing everything in your vicinity</li>
+            </ul>
+        </p>
+
+
+        <h4> Legendary Weapons</h4>
+        <p>
+            Following a similar pattern to Swarm and Vampire Survivors, I wanted to add in special upgrades
+            to each of the weapons, rewarding players for levelling the weapons up repeatedly.
+
+            Currently, some weapons (the Ice Spikes and the Dagger) - but in the future all weapons - have 
+            legendary upgrades which greatly improves their capabilities.
+
+        </p>
+
+      </section>
+
+
+      <!-- Add more sections as needed -->
+    </article>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2025 GreatColtini. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
